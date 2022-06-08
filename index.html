@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DAG's Portfolio</title>
+    <link rel="icon" href="media/Favicon.ico" type="image/x-icon">
+    <meta name="description" content="Hello there! I am DAG, I am passionate about my work. I work to
+    create what you desire so that I can provide you with the best possible results. I am 24/7
+    available">
+    <meta name="og: title" property="og: title" content="Hello there! I am DAG, I am passionate about my work. I work to
+    create what you desire so that I can provide you with the best possible results. I am 24/7
+    available">
+    <meta name="robot" content="index,follow">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:900px)" href="styling/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:900px)" href="styling/small-screens.css">
+    <script src='scripts/app.js' defer></script>
+</head>
+
+<body>
+    <div id="alert-container">
+        <div id="alert">
+            <h2>
+                SERVICE NOT AVAILABLE
+            </h2>
+            <h3>
+                Please <a href="#contact" class="alerlk">Contact</a> for More Information
+            </h3>
+            <button type="button" class="back" onclick="returnToDefault()">Back</button>
+        </div>
+        <div id="alert2">
+            <h2>
+                PRICING IS CURRENTLY NOT AVAILABLE VIA WEBSITE
+            </h2>
+            <h3>
+                Please <a href="#contact" class="alerlk">Contact</a> for Pricing
+            </h3>
+            <button type="button" class="back" onclick="returnToDefault()">Back</button>
+        </div>
+    </div>
+    <div class="container">
+        <!--NAV-BAR-->
+        <div class="navbar">
+            <img src="./media/logo.jpg" class="logo">
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="nav-toggle">
+                <span class="line l-one"></span>
+                <span class="line l-two"></span>
+                <span class="line l-three"></span>
+            </label>
+
+            <ul class="drop-down-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--INTRODUCTION-->
+        <div class="intro">
+            <h1>DAG's Portfolio</h1>
+            <h2>Quality, Beauty and Perfection is what I offer....</h2>
+            <a href="#services" class="services-btn">Services</a>
+        </div>
+        <!--ABOUT-->
+        <div class="about-container" id="about">
+            <div class="about">
+                <h3>Who is DAG?</h3>
+                <p>Well, I am a <span>Front-End Web Developer</span>, a <span>content writer</span>, a
+                    <span>gamer</span>, a <span>graphic designer</span>, a <span>virtual
+                        assistant</span>, and a <span>3D Animator</span>. I am passionate about my work. I work to
+                    create what you desire so that I can provide you with sthe best possible results. I am 24/7
+                    available, so I hope you will <a href="#contact">Hire Me</a>
+                </p>
+            </div>
+        </div>
+        <!--SERVICES-->
+        <div class="services-container" id="services">
+            <h3>Services</h3>
+            <div class="services">
+                <div class="sers ser1">
+                    <h4>Front-End Web Development</h4>
+                    <p>You want professional looking Front-End websites with responsive design and key features of
+                        elegance? You are at the right place. I will create splendid looking, stunning websites with
+                        mobile friendly layouts in a short period of time from scratch. Your thoughts will be
+                        implemented in the design and function of the website so it will be exactly what you desire. My
+                        tools are mostly HTML,CSS and JavaScript.
+                    </p>
+                    <a href="#contact">YES! I want this</a>
+                </div>
+
+                <div class="sers ser2">
+                    <h4>Content Writing</h4>
+                    <p>Need an article or maybe a fictional story without plagiarism while being reader-friendly,
+                        impactful and compelling. I got you covered; I will write professionally, easy to read with
+                        in-depth proofreading and a specified word length. Just email me so we can discuss your
+                        requirements.
+                    </p>
+                    <a href="#!" onclick="unavailableDisplay()">YES! I want this</a>
+                </div>
+
+                <div class="sers ser3">
+                    <h4>Graphic Design</h4>
+                    <p>Are you in need of a logo to symbolize your brand. I will create amazing logos for your product,
+                        service or business and convert it in to a real memorable brand which people can recognize
+                        easily, while the logo being completely unique. I also offer services related to business card
+                        design and flyer design. I create modern-looking eye-catching graphic elements (Logos, Business
+                        Cards, Flyers and Etc).
+                    </p>
+                    <a href="#!" onclick="unavailableDisplay()">YES! I want this</a>
+                </div>
+
+                <div class="sers ser4">
+                    <h4>Virtual Assistant</h4>
+                    <p>You are busy, I understand it, you need some to manage things for you. I offer services related
+                        to E-mail management (such as replying, forwarding, etc) data-entry, adding and managing
+                        products from your
+                        website, personal assistant, scheduling, creating and editing Excel, Word or Powerpoint Files. I
+                        will provide you with the best possible results so that you may be satisfied.
+                    </p>
+                    <a href="#!" onclick="unavailableDisplay()">YES! I want this</a>
+                </div>
+
+                <div class="sers ser5">
+                    <h4>UX/UI Design</h4>
+                    <p>Want a splendid looking UI UX for your website or to re-create your existing website/app into a
+                        modern-looking one. This is the right place for that. I offer professional and creative UI (User
+                        Interface) UX (User Experince) design, clean and clear layout with a flow that corresponds to
+                        your content message, beautiful typography and eye-catching color scheme.
+                    </p>
+                    <a href="#!" onclick="unavailableDisplay()">YES! I want this</a>
+                </div>
+
+                <div class="sers ser6">
+                    <h4>3D Animation</h4>
+                    <p>I will create a visually appealing 3d animation which will serve as an ad for your product; maybe
+                        you want a 3d presentation for your kickstarter which will make it stand out. Entire video will
+                        be created in CGI. Or maybe you want a 3d animation movie
+                        with
+                        characters; I also offer that and the results will be like that of an animation from Pixar.
+                    </p>
+                    <a href="#!" onclick="unavailableDisplay()">YES! I want this</a>
+                </div>
+
+                <div class="sers ser7">
+                    <h4>User Testing</h4>
+                    <p>New game or maybe an application and need to check if its bug free or maybe does it run properly
+                        and how it feels when one uses it. I will check it completely and give you my review on it.</p>
+                    <a href="#!" onclick="unavailableDisplay()">YES! I want this</a>
+                </div>
+            </div>
+        </div>
+        <!--PRICING-->
+        <div class="pricing-container" id="pricing">
+            <h3>Pricing</h3>
+            <div class="service-selector-container">
+                <select class="selector" id="selector" onchange="selectService()">
+                    <option value="">SELECT A SERVICE</option>
+                    <option value="1" class="options">Front-End Web Development</option>
+                    <option value="2" class="options">Content Writing</option>
+                    <option value="3" class="options">Graphic Design</option>
+                    <option value="4" class="options">Virtual Assistant</option>
+                    <option value="5" class="options">UX/UI Design</option>
+                    <option value="6" class="options">3D Animation</option>
+                    <option value="7" class="options">User Testing</option>
+                </select>
+            </div>
+            <div class="pricing" id="prices-container">
+                <div class="basic packages">
+                    <div class="price-b prices">
+                        <h4>Basic</h4>
+                        <h5>45$</h5>
+                    </div>
+                    <ul id="basic"></ul>
+                    <a href="#contact">Select</a>
+                </div>
+                <div class="standard packages">
+                    <div class="price-s prices">
+                        <h4>Standard</h4>
+                        <h5>90$</h5>
+                    </div>
+                    <ul id="standard"></ul>
+                    <a href="#contact">Select</a>
+                </div>
+                <div class="premium packages">
+                    <div class="price-p prices">
+                        <h4>Premium</h4>
+                        <h5>190$</h5>
+                    </div>
+                    <ul id="premium"></ul>
+                    <a href="#contact">Select</a>
+                </div>
+            </div>
+        </div>
+        <!--CONTACT-->
+        <div class="contact-container" id="contact">
+            <div class="contact">
+                <h3>Need Help?</h3>
+                <div class="email">
+                    <a href="mailto:dagcontactpersonal@gmail.com" target="_blank">dagcontactpersonal@gmail.com</a>
+                </div>
+                <ul>
+                    <!--Fiverr-->
+                    <li><a href=" https://www.fiverr.com/devanigam" target="_blank"><svg version="1.1" id="layer"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 652 652" style="enable-background:new 0 0 652 652;"
+                                xml:space="preserve">
+                                <path class="st0" d="M576.6,322.8h-20.9c-13.5,0-20.9,10.1-20.9,27.6v62.7h-40.4v-90.3h-16.9c-13.5,0-20.9,10.1-20.9,27.6v62.7
+                       h-40.4v-124h40.4V308c6.7-14.8,15.5-18.9,29-18.9h49.2V308c6.7-14.8,15.5-18.9,29-18.9h13.5L576.6,322.8z M406.7,360.6h-83.6
+                       c2,14.2,10.8,21.6,24.9,21.6c10.8,0,18.2-4.7,20.9-12.1l35.7,10.1c-8.8,21.6-30.3,34.4-56.6,34.4c-43.8,0-64-34.4-64-64
+                       c0-29,17.5-63.4,61.3-63.4c46.5,0,62,35.1,62,61.3C407.4,354.5,407.4,357.9,406.7,360.6z M368.3,337c-0.7-10.8-8.8-20.2-22.2-20.2
+                       c-12.8,0-20.2,5.4-22.9,20.2H368.3z M213.9,413.1H249l44.5-123.4H253l-21.6,72.1l-21.6-72.8h-40.4L213.9,413.1z M49.4,413.1h39.8
+                       v-90.3h38.4v90.3h39.8v-124H89.2v-7.4c0-8.1,6.1-13.5,14.8-13.5h23.6v-33.7H98c-29,0-48.5,18.2-48.5,44.5v10.1H26.5v33.7h22.9
+                       L49.4,413.1z" />
+                                <path class="st1" d="M601.6,416.5c13.5,0,24.9-11.5,24.9-24.9c0-13.5-11.5-24.9-24.9-24.9s-24.9,11.5-24.9,24.9
+                       C576.6,405.1,588.1,416.5,601.6,416.5z" />
+                            </svg></a></li>
+                    <!--LinkedIn-->
+                    <li><a href="https://www.linkedin.com/in/mr-dag-9b854623b" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg></a></li>
+                    <!--Twitter-->
+                    <!--<li><a href="#!" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg></a></li>-->
+                    <!--Github-->
+                    <!--<li><a href="#!" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg></a></li>-->
+                    <!--Facebook-->
+                    <li><a href="https://web.facebook.com/profile.php?id=100081182417517" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </svg></a></li>
+                    <!--Instagram-->
+                    <li><a href="https://instagram.com/mrdagofficial" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a></li>
+                    <!--Discord-->
+                    <li><a href="https://discordapp.com/users/968350040907206687/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
+                            </svg></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!--Bottom Links-->
+        <div class="bottom-container">
+            <div class="bottom">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <p>Fonts via <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+                <p>Icons via <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
+                <p>Picture by <a href="https://unsplash.com/@timstief" target="_blank">Tim Stief</a> on <a
+                        href="https://unsplash.com/@timstief" target="_blank">Unsplash</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
