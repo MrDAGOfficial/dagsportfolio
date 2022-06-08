@@ -32,7 +32,7 @@ body {
     background: url("../media/images/img-1-S.jpg"), rgba(0, 0, 0, .5);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 #alert-container {
